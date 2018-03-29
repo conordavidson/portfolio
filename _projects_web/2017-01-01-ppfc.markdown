@@ -1,0 +1,12 @@
+---
+title:  "portlandpet<wbr>foodcompany.com"
+date:   2017-01-01 00:00:00
+client: "Portland Pet Food Company"
+description: "Website redesign for Portland Pet Food Company. Portland Pet Food Company makes additive and preservative free dog meals and treats in Portland, OR and is a pioneer in the pet food industry. To introduce their new, shelf-stable product-line, we came up with a website redesign that was photography-centric to best illustrate the products' possible use cases. Website available to view at: <a href='http://www.portlandpetfoodcompany.com' target='_blank'>www.portlandpetfoodcompany.com</a>"
+technologies: "Built on Shopify with Liquid, HTML, CSS, JavaScript, & jQuery."
+images:
+  - url: /content/ppfc/01.png
+  - url: /content/ppfc/02.png
+  - url: /content/ppfc/03.png
+  - url: /content/ppfc/04.png
+---

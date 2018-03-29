@@ -1,0 +1,12 @@
+---
+title:  "Studio Photos w/ Dog"
+date:   2017-01-01 00:00:00
+client: "Portland Pet Food Company"
+description: "Studio photography for the Portland Pet Food Company website."
+technologies: "Photography, editing and retouching."
+images:
+  - url: /content/ppfc_photo/01.jpg
+  - url: /content/ppfc_photo/02.jpg
+  - url: /content/ppfc_photo/03.jpg
+  - url: /content/ppfc_photo/04.jpg
+---

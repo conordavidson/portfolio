@@ -1,0 +1,10 @@
+---
+title:  "stmakes.com"
+date:   2016-01-01 00:00:00
+client: "For Sam Tucker"
+description: "Project oriented portfolio theme running on Anchor CMS. <a href='http://www.stmakes.com' target='_blank'>www.stmakes.com</a>"
+technologies: "Built on Anchor CMS with Anchor's templating language, HTML, CSS, JavaScript, & jQuery."
+images:
+  - url: /content/stmakes/01.png
+  - url: /content/stmakes/02.png
+---

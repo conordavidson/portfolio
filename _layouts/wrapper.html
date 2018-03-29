@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <nav>
+      <div class="container">
+        <div class="wrapper">
+          <ul class="left">
+            <li><img src="{{ site.logo }}"></li>
+            <li><a href="{{ site.baseurl }}">{{ site.title }}</a></li>
+            <li><a href="mailto:{{ site.email }}" target="_blank">{{ site.email }}</a></li>
+            <li><a href="/resume/">Resume</a></li>
+          </ul>
+          <ul class="right">
+            <li id="menu-button" class="outline">Menu</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div id="content" data-toc="{{ page.toc }}">
+        {{ content }}
+        </div>
+        <div id="sidebar">
+          {% include sidebar.html %}
+        </div>
+        <div id="screen"></div>
+      </div>
+    </main>
+  </body>
+  <script src="/js/script.js"></script>
+</html>

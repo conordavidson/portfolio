@@ -1,0 +1,10 @@
+---
+title:  "Andover Community Skatepark Expansion Drawings"
+date:   2012-01-01 00:00:00
+client: "Andover Youth Services"
+description: "Drawings of the concrete addition for the Andover Community Skatepark. These drawings were used for fundraising and promotion. This skatepark addition was constructed summer 2010."
+technologies: "Modeled in Sketchup."
+images:
+  - url: /content/acsp/01.jpg
+  - url: /content/acsp/02.jpg
+---

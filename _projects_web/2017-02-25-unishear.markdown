@@ -1,0 +1,13 @@
+---
+title:  "unishear.com"
+date:   2017-01-01 00:00:00
+client: "SSI Shredding Systems"
+description: "Website for SSI Shredding System's Unishear product line. SSI manufactures world class industrial shredders and shredding systems. This website acts as an endpoint to learn more about their Unishear product line, watch videos, view the products in 3D, request new parts or service, and send inquiries to their team. Website available to view at: <a href='http://www.unishear.com' target='_blank'>www.unishear.com</a>"
+technologies: "Built on ExpressionEngine with ExpressionEngine's templating language, HTML, CSS, JavaScript, & jQuery."
+images:
+  - url: /content/unishear/01.png
+  - url: /content/unishear/02.png
+  - url: /content/unishear/03.png
+  - url: /content/unishear/04.png
+  - url: /content/unishear/05.png
+---

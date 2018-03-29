@@ -1,0 +1,45 @@
+title: Conor Davidson
+email: conor@conordavidson.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://www.conordavidson.com" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/assets/icon.png"
+collections:
+  projects_web:
+    title: "Web Development"
+    url: /
+    show_in_sidebar: false
+  projects_cad:
+    title: "CAD & Product Design"
+    url: /cad
+    show_in_sidebar: true
+  projects_fab:
+    title: "Fabrication"
+    url: /fabrication
+    show_in_sidebar: true
+# projects_photo:
+#  title: "Photography"
+#  url: /photography
+#  show_in_sidebar: true
+  projects_misc:
+    title: "Misc"
+    url: /misc
+    show_in_sidebar: true
+
+# Build settings
+markdown: kramdown
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

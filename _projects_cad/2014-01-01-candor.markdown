@@ -1,0 +1,10 @@
+---
+title:  "Candor Headphones"
+date:   2012-01-01 00:00:00
+client: "Non-commercial."
+description: "Studio headphones concept."
+technologies: "Modeled in Solidworks, rendered in Keyshot."
+images:
+  - url: /content/candor/01.png
+  - url: /content/candor/02.png
+---

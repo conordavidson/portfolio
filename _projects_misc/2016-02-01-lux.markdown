@@ -1,0 +1,12 @@
+---
+title:  "_lux Graphics"
+date:   2016-02-01-01 00:00:00
+client: "_lux"
+description: "Graphics designed for a solar energy company proposal."
+technologies: "n/a"
+images:
+  - url: /content/lux/01.png
+  - url: /content/lux/02.png
+  - url: /content/lux/03.png
+  - url: /content/lux/04.png
+---

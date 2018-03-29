@@ -1,0 +1,10 @@
+---
+title:  "Bloxi Icons"
+date:   2014-01-01-01 00:00:00
+client: "Emberex"
+description: "Two sets of icons for bloxi.com example quizzes."
+technologies: "n/a"
+images:
+  - url: /content/bloxi/01.jpg
+  - url: /content/bloxi/02.jpg
+---

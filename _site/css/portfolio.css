@@ -1,0 +1,306 @@
+.border, .project .info, .project .info td, .outline {
+  border: 1px solid #554fe2; }
+
+body {
+  font: 400 16px/1.5 "Cormorant Garamond", Helvetica, Arial, sans-serif;
+  color: #554fe2;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  list-decoration: none; }
+
+img {
+  vertical-align: middle; }
+
+a {
+  color: #554fe2;
+  text-decoration: none; }
+
+nav {
+  position: fixed;
+  width: 100%;
+  font-family: 'Roboto Mono';
+  font-size: 12px;
+  box-sizing: border-box;
+  padding-bottom: 6px;
+  background-color: #fff;
+  z-index: 10;
+  line-height: 50px;
+  box-shadow: 2px 0px 10px 0 rgba(0, 0, 0, 0.125); }
+  nav .wrapper {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle; }
+  nav .left {
+    float: left;
+    width: 65%;
+    padding: 0px 10px 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+  nav .right {
+    float: right; }
+  nav img {
+    height: 30px;
+    width: auto; }
+  nav li a {
+    transition: opacity 0.125s ease-in-out; }
+    nav li a:hover, nav li a:active {
+      opacity: 0.7; }
+
+li {
+  list-style: none; }
+
+ul, menu, dir {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+header {
+  font-size: 26px;
+  line-height: 32px;
+  color: #f37052;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px dotted #f37052; }
+
+.project {
+  margin-bottom: 80px; }
+  .project img {
+    max-height: calc(100vh - 150px);
+    max-width: 100%;
+    margin-bottom: 20px;
+    cursor: e-resize; }
+  .project .images {
+    text-align: center; }
+  .project .info {
+    font-size: 12px;
+    font-family: 'Roboto Mono';
+    border-collapse: collapse;
+    width: 100%; }
+    .project .info td {
+      padding: 8px; }
+    .project .info a {
+      border-bottom: 1px dotted #554fe2;
+      transition: opacity 0.2s ease-in-out; }
+      .project .info a:hover, .project .info a:active {
+        opacity: 0.7; }
+
+[data-visible="false"] {
+  display: none; }
+
+main {
+  padding-top: 100px;
+  margin-bottom: 80px; }
+
+#content {
+  width: 65%;
+  padding: 0 10px 0 20px;
+  box-sizing: border-box; }
+
+#sidebar {
+  position: fixed;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  pointer-events: none; }
+
+menu {
+  position: absolute;
+  width: 35%;
+  top: 100px;
+  right: 0;
+  padding: 0 20px 0 10px;
+  box-sizing: border-box;
+  pointer-events: auto; }
+
+#menu-button {
+  display: none;
+  cursor: pointer;
+  background-color: white;
+  color: #554fe2;
+  transition: all 0.2s ease-in-out;
+  user-select: none; }
+  #menu-button:hover, #menu-button:active {
+    color: white;
+    background-color: #554fe2; }
+
+#hide-menu-button {
+  width: 25px;
+  height: 25px;
+  padding: 45px 0 30px 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  display: none; }
+  #hide-menu-button:hover, #hide-menu-button:active {
+    opacity: 0.5; }
+
+.outline {
+  padding: 2px 13px;
+  border-radius: 2px; }
+
+#screen {
+  position: fixed;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 50; }
+
+[data-fixed="true"] {
+  overflow: hidden; }
+
+#sidebar .heading {
+  font-size: 26px;
+  margin-bottom: 10px; }
+#sidebar ul {
+  margin-bottom: 30px; }
+#sidebar li {
+  font-family: "Roboto Mono";
+  font-size: 12px;
+  line-height: 20px; }
+#sidebar .item {
+  display: inline-block;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out; }
+  #sidebar .item:hover, #sidebar .item:active {
+    opacity: 0.7; }
+
+@media screen and (max-width: 800px) {
+  #menu-button {
+    display: block;
+    margin: 36px 20px 0 0; }
+
+  #hide-menu-button {
+    display: inline-block; }
+
+  #sidebar {
+    display: block;
+    background-color: #fff;
+    left: 100%;
+    right: -100%;
+    z-index: 0; }
+    #sidebar.in-view {
+      display: block;
+      left: 15%;
+      right: 0;
+      z-index: 100;
+      pointer-events: auto;
+      box-shadow: -2px 0px 10px 0px rgba(0, 0, 0, 0.125); }
+    #sidebar.mobile {
+      transition: left 0.3s ease-in-out, right 0.3s ease-in-out; }
+    #sidebar menu {
+      width: 100%;
+      padding: 0 40px 0 40px;
+      top: 0;
+      text-align: right; }
+      #sidebar menu .heading {
+        font-size: 32px; }
+      #sidebar menu li {
+        font-size: 20px;
+        line-height: 26px; }
+
+  #content {
+    width: 100%;
+    padding: 0 20px; }
+
+  main {
+    padding-top: 130px; }
+
+  nav {
+    line-height: 20px;
+    padding: 8px 0 10px 0; }
+    nav .left {
+      display: block; }
+    nav img {
+      height: 25px;
+      margin-bottom: 5px; }
+    nav li {
+      border-top: none; } }
+@media screen and (min-width: 800px) {
+  nav li {
+    border-top: 6px solid #fff; }
+    nav li.current {
+      border-top: 6px solid #554fe2; } }
+.resume {
+  color: #554fe2;
+  font-family: "Roboto Mono";
+  padding: 0 20px;
+  font-size: 14px; }
+  .resume a {
+    border-bottom: 1px dotted #554fe2;
+    transition: opacity 0.2s ease-in-out; }
+    .resume a:hover, .resume a:active {
+      opacity: 0.7; }
+  .resume .title {
+    border-top: 1px solid white;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    display: block; }
+  .resume .header {
+    margin-top: 20px;
+    display: inline-block; }
+    .resume .header:first-child {
+      margin-top: 0; }
+  .resume .row {
+    display: block;
+    margin: 20px 0 30px 0; }
+  .resume .col-1, .resume .col-2, .resume .col-3 {
+    display: inline-block;
+    vertical-align: top; }
+  .resume .col-1 {
+    display: inline-block;
+    width: 14%; }
+  .resume .col-2 {
+    display: inline-block;
+    width: 28%; }
+  .resume .col-3 {
+    display: inline-block;
+    width: 50%; }
+
+h1 {
+  font-size: 18px; }
+
+h2 {
+  font-size: 18px; }
+
+h3 {
+  font-size: 14px; }
+
+h4 {
+  font-size: 13px; }
+
+h5 {
+  font-size: 12px;
+  color: #bbb9f3; }
+
+h6 {
+  font-size: 11px; }
+
+.padded {
+  padding-bottom: 12px; }
+
+.current {
+  font-weight: 700;
+  pointer-events: none; }

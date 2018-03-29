@@ -1,0 +1,12 @@
+---
+title:  "Tomm"
+date:   2017-01-01 00:00:00
+client: "Non-commercial"
+description: "Tomm is an experiment in material and proportion. A cedar cabinet with cotton doors. Both small and tall. Snap closures allow for easy removal of fabric panels, for washability and interchangeability. In conjunction with Cole Lendrum <a href='http://www.colelendrum.com'>(www.colelendrum.com).</a>"
+technologies: "Red cedar & cotton fabric."
+images:
+  - url: /content/tomm/01.jpg
+  - url: /content/tomm/02.jpg
+  - url: /content/tomm/03.jpg
+  - url: /content/tomm/04.jpg
+---

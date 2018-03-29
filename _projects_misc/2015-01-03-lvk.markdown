@@ -1,0 +1,13 @@
+---
+title:  "LaVerne Krause Group Show"
+date:   2015-01-01-01 00:00:00
+client: "University of Oregon"
+description: "An exhibition in the LaVerne Krause gallery with fellow product design majors Sam Tucker and Cole Lendrum."
+technologies: "Cement, wood, plastic, acrylic."
+images:
+  - url: /content/lvk/01.jpg
+  - url: /content/lvk/02.jpg
+  - url: /content/lvk/03.jpg
+  - url: /content/lvk/04.jpg
+  - url: /content/lvk/05.jpg
+---

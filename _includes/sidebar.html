@@ -1,0 +1,33 @@
+<menu>
+  <img id="hide-menu-button" src="/assets/x.gif">
+  <section>
+    <span class="heading">Table of Contents</span>
+    <ul id="table-of-contents">
+    {% assign counter = 0 %}
+    {% assign romans = "I,II,III,IV,V,VI,VII,VIII,IX,X,XI,XII,XIII,XIV,XV,XVI,XVII,XVIII,XIX,XX" | split: ',' %}
+    {% for project in site.projects_web reversed %}
+        <li>
+          <div class="item">
+            <span class="number">{{ romans[counter] }}.</span>
+            <span class="title">{{ project.title }}</span>
+          </div>
+        </li>
+        {% assign counter=counter | plus:1 %}
+    {% endfor %}
+    </ul>
+  </section>
+  <section>
+    <span class="heading">Personal Work</span>
+    <ul id="personal-work">
+      {% for collection in site.collections %}
+        {% if collection.show_in_sidebar == true %}
+          <li>
+            <div class="item">
+              <a href="{{ collection.url }}">{{ collection.title }}</a>
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+</menu>

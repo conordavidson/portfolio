@@ -1,0 +1,13 @@
+---
+title:  "Crane"
+date:   2015-01-01 00:00:00
+client: "Non-commercial"
+description: "The Crane LED task lamp utilizes two conductive ball joints for maximum adjustability. Made from white oak, aluminum and brass. This light was exhibited at the 2015 International Contemporary Furniture Fair (ICFF) in New York. In conjunction with Cole Lendrum <a href='http://www.colelendrum.com'>(www.colelendrum.com).</a>"
+technologies: "White Oak, Steel, Bronze, and LEDs"
+images:
+  - url: /content/crane/01.jpg
+  - url: /content/crane/02.jpg
+  - url: /content/crane/03.jpg
+  - url: /content/crane/04.jpg
+  - url: /content/crane/05.jpg
+---

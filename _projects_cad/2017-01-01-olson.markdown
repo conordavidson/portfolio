@@ -1,0 +1,13 @@
+---
+title:  "Olson Camera"
+date:   2014-01-01 00:00:00
+client: "Non-commercial"
+description: "Stemming from my frustration with current equipment-heavy professional video solutions and control-light consumer video solutions, I created a concept for a control-centric prosumer point-and-shoot video camera."
+technologies: "Modeled in Solidworks, rendered in KeyShot."
+images:
+  - url: /content/olson/01.jpg
+  - url: /content/olson/02.jpg
+  - url: /content/olson/03.jpg
+  - url: /content/olson/04.jpg
+  - url: /content/olson/05.png
+---

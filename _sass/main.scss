@@ -1,0 +1,382 @@
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $primary-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  list-decoration: none;
+}
+
+img{
+  vertical-align: middle;
+}
+
+a{
+  color: $primary-color;
+  text-decoration: none;
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  font-family: 'Roboto Mono';
+  font-size: 12px;
+  box-sizing: border-box;
+  padding-bottom: 6px;
+  background-color: $background-color;
+  z-index: 10;
+  line-height: 50px;
+  box-shadow: 2px 0px 10px 0 rgba(0,0,0,.125);
+  .wrapper{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .left{
+    float: left;
+    width: $col-1;
+    padding: 0px 10px 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  .right{
+    float: right;
+  }
+  img{
+    height: 30px;
+    width: auto;
+  }
+  li{
+    a{
+      transition: opacity 0.125s ease-in-out;
+      &:hover, &:active{
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+li{
+  list-style: none;
+}
+
+ul, menu, dir{
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+
+.container{
+  width: 100%;
+  max-width: $max-content-width;
+  margin: 0 auto;
+}
+
+header{
+  font-size: 26px;
+  line-height: 32px;
+  color: $secondary-color;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  border-bottom: 1px dotted $secondary-color;
+}
+
+.project{
+  margin-bottom: 80px;
+  img{
+    max-height: calc(100vh - 150px);
+    max-width: 100%;
+    margin-bottom: 20px;
+    cursor: e-resize;
+  }
+  .images{
+    text-align: center;
+  }
+  .info{
+    font-size: 12px;
+    font-family: 'Roboto Mono';
+    @extend .border;
+    border-collapse: collapse;
+    width: 100%;
+    td{
+      padding: 8px;
+      @extend .border;
+    }
+    a{
+      border-bottom: 1px dotted $primary-color;
+      transition: opacity 0.2s ease-in-out;
+      &:hover, &:active{
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+[data-visible="false"]{
+  display: none;
+}
+
+main{
+  padding-top: 100px;
+  margin-bottom: 80px;
+}
+
+#content{
+  width: $col-1;
+  padding: 0 10px 0 20px;
+  box-sizing: border-box;
+}
+
+#sidebar{
+  position: fixed;
+  display: block;
+  top: 0; right: 0; bottom: 0; left: 0;
+  max-width: $max-content-width;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+menu{
+  position: absolute;
+  width: $col-2;
+  top: 100px;
+  right: 0;
+  padding: 0 20px 0 10px;
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+#menu-button{
+  display: none;
+  cursor: pointer;
+  background-color: white;
+  color: $primary-color;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  &:hover, &:active{
+    color: white;
+    background-color: $primary-color;
+  }
+}
+
+#hide-menu-button{
+  width: 25px;
+  height: 25px;
+  padding: 45px 0 30px 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  display: none;
+  &:hover, &:active{
+    opacity: 0.5;
+  }
+}
+
+.outline{
+  @extend .border;
+  padding: 2px 13px;
+  border-radius: 2px;
+}
+
+#screen{
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 50;
+  }
+
+  [data-fixed="true"]{
+    overflow: hidden;
+  }
+
+#sidebar{
+  .heading{
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  ul{
+    margin-bottom: 30px;
+  }
+  li{
+    font-family: "Roboto Mono";
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .item{
+    display: inline-block;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    &:hover, &:active{
+      opacity: 0.7;
+    }
+  }
+}
+
+@include media-query($on-mobile) {
+  #menu-button{
+    display: block;
+    margin: 36px 20px 0 0;
+  }
+  #hide-menu-button{
+    display: inline-block;
+  }
+  #sidebar{
+    display: block;
+    background-color: $background-color;
+    left: 100%;
+    right: -100%;
+    z-index: 0;
+    &.in-view{
+      display: block;
+      left: 15%;
+      right: 0;
+      z-index: 100;
+      pointer-events: auto;
+      box-shadow: -2px 0px 10px 0px rgba(0,0,0,.125);
+    }
+    &.mobile{
+      transition: left 0.3s ease-in-out, right 0.3s ease-in-out;
+    }
+    menu{
+      width: 100%;
+      padding: 0 40px 0 40px;
+      top: 0;
+      text-align: right;
+      .heading{
+        font-size: 32px;
+      }
+      li{
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+  }
+  #content{
+    width: 100%;
+    padding: 0 20px;
+  }
+  main{
+    padding-top: 130px;
+  }
+  nav{
+    line-height: 20px;
+    padding: 8px 0 10px 0;
+    .left{
+      display: block;
+    }
+    img{
+      height: 25px;
+      margin-bottom: 5px;
+    }
+    li{
+      border-top: none;
+    }
+  }
+}
+
+@include min-media-query($on-mobile) {
+  nav{
+    li{
+      border-top: 6px solid $background-color;
+      &.current{
+        border-top: 6px solid $primary-color;
+      }
+    }
+  }
+}
+
+.resume {
+	color: $primary-color;
+	font-family: "Roboto Mono";
+  padding: 0 20px;
+  font-size: 14px;
+  a{
+    border-bottom: 1px dotted $primary-color;
+    transition: opacity 0.2s ease-in-out;
+    &:hover, &:active{
+      opacity: 0.7;
+    }
+  }
+  .title{
+    border-top: 1px solid white;
+  	padding-top: 12px;
+  	margin-bottom: 20px;
+  	display: block;
+  }
+  .header{
+  	margin-top: 20px;
+  	display: inline-block;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  .row{
+  	display: block;
+  	margin: 20px 0 30px 0;
+  }
+  .col-1, .col-2, .col-3{
+  	display: inline-block;
+  	vertical-align: top;
+  }
+  .col-1{
+  	display: inline-block;
+  	width: 14%;
+  }
+  .col-2{
+  	display: inline-block;
+  	width: 28%;
+  }
+  .col-3{
+  	display: inline-block;
+  	width: 50%;
+  }
+}
+
+
+h1 {
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+h4 {
+	font-size: 13px;
+}
+
+h5{
+	font-size: 12px;
+	color: #bbb9f3;
+}
+
+h6{
+	font-size: 11px;
+}
+
+.padded{
+	padding-bottom: 12px;
+}
+
+.current{
+  font-weight: 700;
+  pointer-events: none;
+}

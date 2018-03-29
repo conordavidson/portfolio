@@ -1,0 +1,11 @@
+---
+title:  "Kamp Grizzly Desks"
+date:   2016-01-01 00:00:00
+client: "Kamp Grizzly"
+description: "18 desks and partitions for Kamp Grizzly, a video production office in Portland, OR. Built with Nick Musso, Sam Tucker <a href='http://www.stmakes.com'>(www.stmakes.com)</a> and Cole Lendrum <a href='http://www.colelendrum.com'>(www.colelendrum.com).</a>"
+technologies: "Fir lumber, plywood, and Simpson ties."
+images:
+  - url: /content/kampgrizzly/01.jpg
+  - url: /content/kampgrizzly/02.jpg
+  - url: /content/kampgrizzly/03.jpg
+---

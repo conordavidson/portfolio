@@ -1,0 +1,9 @@
+---
+title:  "Fujifilm X100 Lens Shade"
+date:   2014-01-01 00:00:00
+client: "Non-commercial"
+description: "3D printed lens shade for the Fujifilm X100."
+technologies: "ABS plastic."
+images:
+  - url: /content/x100shade/01.jpg
+---

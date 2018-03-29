@@ -1,0 +1,35 @@
+---
+layout: wrapper
+---
+
+{% if content != "" %}
+  <header>
+    {{ content }}
+  </header>
+{% endif %}
+<ul class="projects">
+  {% for project in site[page.projects] reversed %}
+    <li class="project">
+      <div class="images">
+      {% assign counter = 0 %}
+      {% for image in project.images %}
+        <img src="{{ image.url }}" data-visible="{% if counter == 0 %}true{% else %}false{% endif %}">
+        {% assign counter=counter | plus:1 %}
+      {% endfor %}
+      </div>
+      <table border="1" class="info">
+        <tr>
+          <td class="title">{{ project.title }}</td>
+          <td rowspan="2" class="description">{{ project.description }}</td>
+        </tr>
+        <tr>
+          <td class="date">{{ project.date | date: "%Y" }}</td>
+        </tr>
+        <tr>
+          <td class="client">{{ project.client }}</td>
+          <td class="technologies">{{ project.technologies }}</td>
+        </tr>
+      </table>
+    </li>
+  {% endfor %}
+</ul>
