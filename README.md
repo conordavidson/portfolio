@@ -1,2 +1,2 @@
 # portfolio
-Portfolio Static Site Generator
+static site generator w/ jekyll
